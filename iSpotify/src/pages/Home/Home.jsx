@@ -1,9 +1,13 @@
-import './Home.module.css'; 
+import React from 'react';
+import LoginForm from '../../components/LoginForm';
+import './Home.css';
 
-export default function Home() {
-    return (
-        <div className="homepageDiv">
-            Home
-        </div>
-    );
-}
+const Home = () => {
+  return (
+    <div className="home-container">
+      <LoginForm />
+    </div>
+  );
+};
+
+export default Home;

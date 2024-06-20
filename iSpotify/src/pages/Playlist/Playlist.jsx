@@ -1,4 +1,20 @@
-import Sidebar from "../../components/Sidebar/Sidebar";
+import React from 'react';
+import Sidebar from '../../components/Sidebar_artistas';
+import ArtistsPage from '../../components/ArtistsPage';
+import './Playlist.module.css';
+
+const Playlist = () => {
+  return (
+    <div className="playlist-container">
+      <Sidebar />
+      <ArtistsPage />
+    </div>
+  );
+};
+
+export default Playlist;
+
+/* import Sidebar from "../../components/Sidebar/Sidebar";
 import styles from './Playlist.module.css'; 
 
 export default function Playlist() {
@@ -13,3 +29,4 @@ export default function Playlist() {
         </div>
     );
 }
+*/

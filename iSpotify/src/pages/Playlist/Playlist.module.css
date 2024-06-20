@@ -1,4 +1,9 @@
-.playlistPage {
+.playlist-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+/* .playlistPage {
     border: 2px solid red;
     margin: 0;
     padding: 0;
@@ -10,5 +15,5 @@
         #0C5676 39%,  
         #000000 81%
     );
-}
+}*/
 
