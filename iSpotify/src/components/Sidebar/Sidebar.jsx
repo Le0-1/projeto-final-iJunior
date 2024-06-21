@@ -15,7 +15,7 @@ export default function Sidebar( { links } )
 {
     return (
         <div className={styles.sidebar}>
-            <span><strong>iSpotify <sup>R</sup> </strong></span>
+            <span><strong>iSpotify®</strong></span>
             {
                 links.map((link) => {
                     return <Link className={styles.linkStyle} key={link.path} to={link.path}>{link.name}</Link>

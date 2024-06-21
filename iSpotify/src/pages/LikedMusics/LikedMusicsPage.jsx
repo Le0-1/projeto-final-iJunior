@@ -1,4 +1,4 @@
-import './LikedMusics.module.css';
+import './LikedMusicsPage.module.css';
 
 export default function LikedMusics()
 {

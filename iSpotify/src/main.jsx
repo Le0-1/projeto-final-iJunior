@@ -5,9 +5,10 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Pages Import
-import Home from './pages/Home/Home.jsx';
+import Home from './pages/Home/HomePage.jsx';
 import Playlist from './pages/Playlist/Playlist.jsx';
-import LikedMusics from './pages/LikedMusics/LikedMusics.jsx';
+import LikedMusics from './pages/LikedMusics/LikedMusicsPage.jsx';
+import ArtistsPage from './pages/Artists/ArtistsPage.jsx';
 
 
 import './index.css';
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/liked-musics',
     element: <LikedMusics/>
+  },
+  {
+    path: '/artists',
+    element: <ArtistsPage/>,
   },
 ]);
 
