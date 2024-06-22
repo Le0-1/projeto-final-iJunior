@@ -13,6 +13,11 @@
     padding: 1rem;
 }
 
+.artistLink
+{
+    text-decoration: none;
+}
+
 .artistImage
 {
     width: 16rem;
