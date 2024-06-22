@@ -37,7 +37,31 @@ export async function getArtist(artistId) {
         return response.data;
 
     } catch (error) {
-        console.error('Erro ao obter o artista aleatório:', error);
+        console.error('Erro ao obter o artista', error);
+        throw error;
+    }
+}
+
+
+/**
+ * @param {String} artistId
+ * @return tracks of the artist
+ */
+export async function getArtistTracks(artistId)
+{
+    try {
+        const acessToken = await getAccessToken();
+        const response = await axios.get(`https://api.spotify.com/v1/artists/${artistId}/top-tracks`, 
+        {
+            params: {market: 'BR'},    
+            headers: {
+                'Authorization': `Bearer ${acessToken}`
+            }
+        });
+        return response.data;
+
+    } catch (error) {
+        console.error('Erro ao obter as tracks do artista', error);
         throw error;
     }
 }
