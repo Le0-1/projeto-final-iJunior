@@ -1,5 +1,4 @@
-.playlistPage {
-    border: 2px solid red;
+.artistTracksPage {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,5 +9,15 @@
         #0C5676 39%,  
         #000000 81%
     );
+    display: flex;
 }
 
+.tracksContainer
+{
+    border: 2px solid red;
+    width: 80%;
+    max-height: 30%;
+    flex-direction: column;
+    align-self: flex-end;
+    overflow-y: scroll;
+}

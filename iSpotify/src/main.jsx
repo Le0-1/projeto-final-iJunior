@@ -6,12 +6,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Pages Import
 import Home from './pages/Home/HomePage.jsx';
-import Playlist from './pages/Playlist/Playlist.jsx';
 import LikedMusics from './pages/LikedMusics/LikedMusicsPage.jsx';
 import ArtistsPage from './pages/Artists/ArtistsPage.jsx';
 
 
 import './index.css';
+import ArtistTracksPage from './pages/ArtistTracksPage/ArtistTracksPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
     errorElement: <div>404 Not Found  <a href="/">Go To Main Page</a> </div>
   },
   {
-    path: '/playlist',
-    element: <Playlist/>,
+    path: '/artist-tracks-page/:artistId',
+    element: <ArtistTracksPage/>
   },
   {
     path: '/liked-musics',
